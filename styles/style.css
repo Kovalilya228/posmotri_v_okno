@@ -88,19 +88,121 @@ a {
   align-items: start;
 }
 
+fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  color: #FFF;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.search-form__label {
+  gap: 5px;
+  display: flex;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.search-form__label-text {
+  color: #FFF;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} 
+
+.search-form__textfield {
+  appearance: none;
+  color: rgba(255, 255, 255, 0.70);
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  border-right: none;
+  border-left: none;
+  height: 27px;
+  width: 225px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+}
+
+button {
+  cursor: pointer;
+  color: #FFF;
+  text-align: center;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: transparent;
+  border: 1px solid #FFF;
+  min-height: 34px;
+}
+
+.search-form__submit-button {
+  align-self: end;
+  width: 194px;
+}
+
 .content__details {
   width: 100%;
   height: 100%;
 }
 
-.content__details > h1 {
+.title {
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.title {
   margin-bottom: 21px;
 }
 
 .content__list {
+  z-index: 0;
   position: relative;
   height: 298px;
   overflow-y: scroll;
+}
+
+.preloader {
+  z-index: 1;
 }
 
 .content__video-card {
@@ -123,56 +225,6 @@ a {
   height: 100%;
 }
 
-.search-form__fieldset-title {
-  color: #FFF;
-  font-family: Fira Sans Condensed;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 5px;
-}
-
-.search-form__textfield {
-  appearance: none;
-  color: rgba(255, 255, 255, 0.70);
-  font-family: Fira Sans Condensed;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  background-color: transparent;
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
-  border-right: none;
-  border-left: none;
-  height: 27px;
-  width: 225px;
-}
-
-.search-form__label-text {
-  color: #FFF;
-  font-family: Fira Sans Condensed;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-} 
-
-.title {
-  color: #FFF;
-  font-family: Oswald;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 94%;
-  text-transform: uppercase;
-}
-
-.content__accent {
-  color: #545050;
-}
-
 .content__video-card-title {
   font-family: Oswald;
   font-size: 30px;
@@ -193,55 +245,8 @@ a {
   line-height: 90%; 
 }
 
-fieldset {
-  border: none;
-}
-
-.search-form__label {
-  gap: 5px;
-  display: flex;
-  width: fit-content;
-  cursor: pointer;
-}
-
-button {
-  cursor: pointer;
-  color: #FFF;
-  text-align: center;
-  font-family: Fira Sans Condensed;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  background-color: transparent;
-  border: 1px solid #FFF;
-  height: 34px;
-}
-
-.search-form__submit-button {
-  align-self: end;
-  width: 194px;
-}
-
-.search-form__checkbox-list {
-  display: flex;
-  gap: 15px;
-}
-
 .more-button {
   width: 399px;
-}
-
-.search-form__pseudo-checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 19px;
-  height: 19px;
-  border: 1px solid #fff;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
